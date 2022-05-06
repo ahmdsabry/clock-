@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            ساعة احترافية 
+        </title>
+        <link href="clock.css" rel="stylesheet">
+<style>
+#outside {
+    width: 400%;
+    height: 300px;
+    max-width: 400px;
+    max-height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: darkgray; 
+}
+#inside {
+    width: 340%;
+    height: 240px;
+    max-width: 340px;
+    max-height: 240px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: cyan;
+    text-align: center;  
+}
+#time {
+background: black;
+width: 100%;
+height: 200px;
+font-size: 50px;
+color: aliceblue;
+}
+#date {
+height: 40px;
+background: aliceblue;
+font-size: 22px;
+
+}
+#hour,#setdate {
+    margin: 0%;
+}
+</style>
+    </head>
+    <body id="body">
+        <main id="outside">
+            <main id="inside">
+<article id="time">
+    <h1 id="hour">
+        23:00
+    </h1>
+</article>
+<article id="date">
+    <p id="setdate">
+        3-7-2021
+    </p>
+</article>
+<article id="color">
+    <input type="color" id="setcolor" onchange="getcolor()">  
+</article>
+            </main>
+        </main>
+        <script src="clock.js">
+        </script>
+    </body>
+</html>
